@@ -1,0 +1,367 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling1\cocoaplatform1{\fonttbl\f0\fnil\fcharset0 .AppleSystemUIFontMonospaced-Regular;}
+{\colortbl;\red255\green255\blue255;\red97\green174\blue238;\red198\green120\blue221;\red171\green178\blue191;
+\red224\green108\blue117;\red209\green154\blue102;\red152\green195\blue121;\red92\green99\blue112;\red86\green182\blue194;
+}
+{\*\expandedcolortbl;;\cssrgb\c38039\c68235\c93333;\cssrgb\c77647\c47059\c86667;\cssrgb\c67059\c69804\c74902;
+\cssrgb\c87843\c42353\c45882;\cssrgb\c81961\c60392\c40000;\cssrgb\c59608\c76471\c47451;\cssrgb\c36078\c38824\c43922;\cssrgb\c33725\c71373\c76078;
+}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 <!doctype \cf3 html\cf2 >\cf4 \
+<\cf5 html\cf4  \cf6 lang\cf4 =\cf7 "es"\cf4 >\
+<\cf5 head\cf4 >\
+<\cf5 meta\cf4  \cf6 charset\cf4 =\cf7 "utf-8"\cf4  />\
+<\cf5 meta\cf4  \cf6 name\cf4 =\cf7 "viewport"\cf4  \cf6 content\cf4 =\cf7 "width=device-width,initial-scale=1"\cf4  />\
+<\cf5 title\cf4 >Hora exacta por pa\'eds \'97 Hecho con IA</\cf5 title\cf4 >\
+<\cf5 style\cf4 >\
+  \cf6 :root\cf4 \{\
+    \cf6 --bg\cf4 : \cf6 #0f1724\cf4 ;\
+    \cf6 --card\cf4 : \cf6 #0b1220\cf4 ;\
+    \cf6 --accent\cf4 : \cf6 #6ee7b7\cf4 ;\
+    \cf6 --muted\cf4 : \cf6 #94a3b8\cf4 ;\
+    \cf6 --glass\cf4 : rgba(\cf6 255\cf4 ,\cf6 255\cf4 ,\cf6 255\cf4 ,\cf6 0.03\cf4 );\
+    \cf7 font-family\cf4 : Inter, system-ui, -apple-system, \cf7 "Segoe UI"\cf4 , Roboto, \cf7 "Helvetica Neue"\cf4 , Arial;\
+  \}\
+  *\{\cf7 box-sizing\cf4 :border-box\}\
+  \cf5 body\cf4 \{\
+    \cf7 margin\cf4 :\cf6 0\cf4 ; \cf7 min-height\cf4 :\cf6 100vh\cf4 ; \cf7 background\cf4 :linear-gradient(\cf6 180deg\cf4 ,\cf6 #071026\cf4  \cf6 0%\cf4 , \cf6 #071827\cf4  \cf6 100%\cf4 ); \cf7 color\cf4 :\cf6 #e6eef6\cf4 ;\
+    \cf7 display\cf4 :flex; \cf7 align-items\cf4 :center; \cf7 justify-content\cf4 :center; \cf7 padding\cf4 :\cf6 24px\cf4 ;\
+  \}\
+  \cf6 .container\cf4 \{\
+    \cf7 width\cf4 :\cf6 100%\cf4 ; \cf7 max-width\cf4 :\cf6 900px\cf4 ; \cf7 background\cf4 :linear-gradient(\cf6 180deg\cf4 , rgba(\cf6 255\cf4 ,\cf6 255\cf4 ,\cf6 255\cf4 ,\cf6 0.02\cf4 ), rgba(\cf6 255\cf4 ,\cf6 255\cf4 ,\cf6 255\cf4 ,\cf6 0.01\cf4 ));\
+    \cf7 border-radius\cf4 :\cf6 14px\cf4 ; \cf7 padding\cf4 :\cf6 20px\cf4 ; \cf7 box-shadow\cf4 : \cf6 0\cf4  \cf6 10px\cf4  \cf6 30px\cf4  rgba(\cf6 2\cf4 ,\cf6 6\cf4 ,\cf6 23\cf4 ,\cf6 0.6\cf4 ); \cf7 border\cf4 :\cf6 1px\cf4  solid rgba(\cf6 255\cf4 ,\cf6 255\cf4 ,\cf6 255\cf4 ,\cf6 0.03\cf4 );\
+  \}\
+  \cf5 header\cf4 \{\cf7 display\cf4 :flex; \cf7 align-items\cf4 :center; \cf7 justify-content\cf4 :space-between; \cf7 gap\cf4 :\cf6 12px\cf4 ; \cf7 margin-bottom\cf4 :\cf6 14px\cf4 \}\
+  \cf5 header\cf4  \cf5 h1\cf4 \{\cf7 font-size\cf4 :\cf6 18px\cf4 ; \cf7 margin\cf4 :\cf6 0\cf4 ; \cf7 letter-spacing\cf4 :-\cf6 0.2px\cf4 \}\
+  \cf5 header\cf4  \cf5 p\cf4 \{\cf7 margin\cf4 :\cf6 0\cf4 ; \cf7 color\cf4 :var(--muted); \cf7 font-size\cf4 :\cf6 13px\cf4 \}\
+  \cf6 .main\cf4 \{\cf7 display\cf4 :flex; \cf7 gap\cf4 :\cf6 18px\cf4 ; \cf7 flex-wrap\cf4 :wrap\}\
+  \cf6 .side\cf4 \{\cf7 flex\cf4 :\cf6 1\cf4  \cf6 1\cf4  \cf6 300px\cf4 ; \cf7 min-width\cf4 :\cf6 260px\cf4 \}\
+  \cf6 .clockCard\cf4 \{\cf7 flex\cf4 :\cf6 2\cf4  \cf6 1\cf4  \cf6 360px\cf4 ; \cf7 min-width\cf4 :\cf6 300px\cf4 ; \cf7 background\cf4 :linear-gradient(\cf6 180deg\cf4 , rgba(\cf6 255\cf4 ,\cf6 255\cf4 ,\cf6 255\cf4 ,\cf6 0.02\cf4 ), rgba(\cf6 255\cf4 ,\cf6 255\cf4 ,\cf6 255\cf4 ,\cf6 0\cf4 )); \cf7 padding\cf4 :\cf6 18px\cf4 ; \cf7 border-radius\cf4 :\cf6 10px\cf4 ; \cf7 border\cf4 :\cf6 1px\cf4  solid rgba(\cf6 255\cf4 ,\cf6 255\cf4 ,\cf6 255\cf4 ,\cf6 0.02\cf4 )\}\
+  \cf5 label\cf4 \{\cf7 display\cf4 :block; \cf7 font-size\cf4 :\cf6 13px\cf4 ; \cf7 color\cf4 :var(--muted); \cf7 margin-bottom\cf4 :\cf6 8px\cf4 \}\
+  \cf5 select\cf4 , \cf5 input\cf6 [type=\cf7 "search"\cf6 ]\cf4 \{\
+    \cf7 width\cf4 :\cf6 100%\cf4 ; \cf7 padding\cf4 :\cf6 10px\cf4  \cf6 12px\cf4 ; \cf7 border-radius\cf4 :\cf6 8px\cf4 ; \cf7 border\cf4 :\cf6 1px\cf4  solid rgba(\cf6 255\cf4 ,\cf6 255\cf4 ,\cf6 255\cf4 ,\cf6 0.04\cf4 );\
+    \cf7 background\cf4 :var(--glass); \cf7 color\cf4 :inherit; \cf7 font-size\cf4 :\cf6 15px\cf4 ; \cf7 outline\cf4 :none;\
+  \}\
+  \cf6 .help\cf4 \{\cf7 font-size\cf4 :\cf6 13px\cf4 ; \cf7 color\cf4 :var(--muted); \cf7 margin-top\cf4 :\cf6 10px\cf4 \}\
+  \cf6 .bigTime\cf4 \{\cf7 font-size\cf4 :\cf6 54px\cf4 ; \cf7 font-weight\cf4 :\cf6 600\cf4 ; \cf7 letter-spacing\cf4 :\cf6 0.5px\cf4 ; \cf7 margin\cf4 :\cf6 6px\cf4  \cf6 0\cf4 \}\
+  \cf6 .small\cf4 \{\cf7 font-size\cf4 :\cf6 15px\cf4 ; \cf7 color\cf4 :var(--muted)\}\
+  \cf6 .meta\cf4 \{\cf7 display\cf4 :flex; \cf7 gap\cf4 :\cf6 12px\cf4 ; \cf7 margin-top\cf4 :\cf6 10px\cf4 ; \cf7 flex-wrap\cf4 :wrap\}\
+  \cf6 .meta\cf4  \cf6 .pill\cf4 \{\cf7 background\cf4 :rgba(\cf6 255\cf4 ,\cf6 255\cf4 ,\cf6 255\cf4 ,\cf6 0.03\cf4 ); \cf7 padding\cf4 :\cf6 8px\cf4  \cf6 10px\cf4 ; \cf7 border-radius\cf4 :\cf6 999px\cf4 ; \cf7 font-size\cf4 :\cf6 13px\cf4 ; \cf7 color\cf4 :var(--muted); \cf7 border\cf4 :\cf6 1px\cf4  solid rgba(\cf6 255\cf4 ,\cf6 255\cf4 ,\cf6 255\cf4 ,\cf6 0.02\cf4 )\}\
+  \cf6 .tzList\cf4 \{\cf7 margin-top\cf4 :\cf6 10px\cf4 \}\
+  \cf6 .footer\cf4 \{\cf7 margin-top\cf4 :\cf6 16px\cf4 ; \cf7 font-size\cf4 :\cf6 13px\cf4 ; \cf7 color\cf4 :var(--muted)\}\
+  \cf6 .controls\cf4 \{\cf7 display\cf4 :flex; \cf7 gap\cf4 :\cf6 8px\cf4 ; \cf7 margin-top\cf4 :\cf6 12px\cf4 ; \cf7 align-items\cf4 :center\}\
+  \cf5 button\cf4 \{\cf7 background\cf4 :linear-gradient(\cf6 90deg\cf4 ,var(--accent), \cf6 #34d399\cf4 ); \cf7 border\cf4 :none; \cf7 color\cf4 :\cf6 #072225\cf4 ; \cf7 font-weight\cf4 :\cf6 600\cf4 ; \cf7 padding\cf4 :\cf6 9px\cf4  \cf6 12px\cf4 ; \cf7 border-radius\cf4 :\cf6 10px\cf4 ; \cf7 cursor\cf4 :pointer\}\
+  \cf6 .mutebtn\cf4 \{\cf7 background\cf4 :transparent; \cf7 border\cf4 :\cf6 1px\cf4  solid rgba(\cf6 255\cf4 ,\cf6 255\cf4 ,\cf6 255\cf4 ,\cf6 0.03\cf4 ); \cf7 color\cf4 :var(--muted); \cf7 padding\cf4 :\cf6 8px\cf4  \cf6 10px\cf4 ; \cf7 border-radius\cf4 :\cf6 8px\cf4 \}\
+  \cf3 @media\cf4  (\cf7 max-width\cf4 :\cf6 720px\cf4 )\{\
+    \cf6 .bigTime\cf4 \{\cf7 font-size\cf4 :\cf6 40px\cf4 \}\
+    \cf5 header\cf4 \{\cf7 flex-direction\cf4 :column; \cf7 align-items\cf4 :flex-start; \cf7 gap\cf4 :\cf6 6px\cf4 \}\
+  \}\
+</\cf5 style\cf4 >\
+</\cf5 head\cf4 >\
+<\cf5 body\cf4 >\
+  <\cf5 div\cf4  \cf6 class\cf4 =\cf7 "container"\cf4  \cf6 role\cf4 =\cf7 "main"\cf4 >\
+    <\cf5 header\cf4 >\
+      <\cf5 div\cf4 >\
+        <\cf5 h1\cf4 >Hora exacta \'97 seleccion\'e1 tu pa\'eds</\cf5 h1\cf4 >\
+        <\cf5 p\cf4 >Hecho desde iPhone y IA \'b7 Hora en tiempo real por pa\'eds / zona horaria</\cf5 p\cf4 >\
+      </\cf5 div\cf4 >\
+      <\cf5 div\cf4  \cf6 class\cf4 =\cf7 "small"\cf4 >Detectado: <\cf5 span\cf4  \cf6 id\cf4 =\cf7 "detectedTz"\cf4 >\'97</\cf5 span\cf4 ></\cf5 div\cf4 >\
+    </\cf5 header\cf4 >\
+\
+    <\cf5 div\cf4  \cf6 class\cf4 =\cf7 "main"\cf4 >\
+      <\cf5 div\cf4  \cf6 class\cf4 =\cf7 "side"\cf4 >\
+        <\cf5 label\cf4  \cf6 for\cf4 =\cf7 "countrySearch"\cf4 >Buscar pa\'eds</\cf5 label\cf4 >\
+        <\cf5 input\cf4  \cf6 id\cf4 =\cf7 "countrySearch"\cf4  \cf6 type\cf4 =\cf7 "search"\cf4  \cf6 placeholder\cf4 =\cf7 "Escribe un pa\'eds, p. ej. Argentina"\cf4  \cf6 autocomplete\cf4 =\cf7 "off"\cf4  />\
+\
+        <\cf5 label\cf4  \cf6 style\cf4 =\cf7 "margin-top:12px"\cf4  \cf6 for\cf4 =\cf7 "countrySelect"\cf4 >Seleccionar pa\'eds (usa la b\'fasqueda arriba)</\cf5 label\cf4 >\
+        <\cf5 select\cf4  \cf6 id\cf4 =\cf7 "countrySelect"\cf4  \cf6 size\cf4 =\cf7 "8"\cf4  \cf6 aria-label\cf4 =\cf7 "Lista de pa\'edses"\cf4 >\
+          \cf8 <!-- Opciones generadas por JS -->\cf4 \
+        </\cf5 select\cf4 >\
+\
+        <\cf5 div\cf4  \cf6 class\cf4 =\cf7 "help"\cf4 >Si tu pa\'eds tiene varias zonas horarias, seleccion\'e1 la que prefieras en <\cf5 strong\cf4 >"Zona horaria"</\cf5 strong\cf4 > abajo.</\cf5 div\cf4 >\
+\
+        <\cf5 div\cf4  \cf6 class\cf4 =\cf7 "tzList"\cf4  \cf6 style\cf4 =\cf7 "margin-top:12px"\cf4 >\
+          <\cf5 label\cf4  \cf6 for\cf4 =\cf7 "tzSelect"\cf4 >Zona horaria (opcional)</\cf5 label\cf4 >\
+          <\cf5 select\cf4  \cf6 id\cf4 =\cf7 "tzSelect"\cf4 >\
+            <\cf5 option\cf4  \cf6 value\cf4 =\cf7 ""\cf4 >Seguir zona del pa\'eds (predeterminada)</\cf5 option\cf4 >\
+          </\cf5 select\cf4 >\
+        </\cf5 div\cf4 >\
+\
+        <\cf5 div\cf4  \cf6 class\cf4 =\cf7 "controls"\cf4 >\
+          <\cf5 button\cf4  \cf6 id\cf4 =\cf7 "useDetected"\cf4 >Usar mi zona detectada</\cf5 button\cf4 >\
+          <\cf5 button\cf4  \cf6 id\cf4 =\cf7 "copyBtn"\cf4  \cf6 class\cf4 =\cf7 "mutebtn"\cf4 >Copiar hora actual</\cf5 button\cf4 >\
+        </\cf5 div\cf4 >\
+\
+        <\cf5 div\cf4  \cf6 class\cf4 =\cf7 "footer"\cf4 >Consejo: pod\'e9s publicar esta p\'e1gina gratis en GitHub Pages o Netlify.</\cf5 div\cf4 >\
+      </\cf5 div\cf4 >\
+\
+      <\cf5 div\cf4  \cf6 class\cf4 =\cf7 "clockCard"\cf4 >\
+        <\cf5 label\cf4 >Reloj en tiempo real</\cf5 label\cf4 >\
+        <\cf5 div\cf4  \cf6 style\cf4 =\cf7 "margin-top:6px"\cf4 >\
+          <\cf5 div\cf4  \cf6 class\cf4 =\cf7 "bigTime"\cf4  \cf6 id\cf4 =\cf7 "timeDisplay"\cf4 >--:--:--</\cf5 div\cf4 >\
+          <\cf5 div\cf4  \cf6 class\cf4 =\cf7 "small"\cf4  \cf6 id\cf4 =\cf7 "dateDisplay"\cf4 >--</\cf5 div\cf4 >\
+\
+          <\cf5 div\cf4  \cf6 class\cf4 =\cf7 "meta"\cf4  \cf6 style\cf4 =\cf7 "margin-top:10px"\cf4 >\
+            <\cf5 div\cf4  \cf6 class\cf4 =\cf7 "pill"\cf4  \cf6 id\cf4 =\cf7 "tzName"\cf4 >Zona: \'97</\cf5 div\cf4 >\
+            <\cf5 div\cf4  \cf6 class\cf4 =\cf7 "pill"\cf4  \cf6 id\cf4 =\cf7 "utcOffset"\cf4 >UTC: \'97</\cf5 div\cf4 >\
+            <\cf5 div\cf4  \cf6 class\cf4 =\cf7 "pill"\cf4  \cf6 id\cf4 =\cf7 "weekday"\cf4 >D\'eda: \'97</\cf5 div\cf4 >\
+            <\cf5 div\cf4  \cf6 class\cf4 =\cf7 "pill"\cf4  \cf6 id\cf4 =\cf7 "dstInfo"\cf4 >DST: \'97</\cf5 div\cf4 >\
+          </\cf5 div\cf4 >\
+\
+          <\cf5 div\cf4  \cf6 style\cf4 =\cf7 "margin-top:14px"\cf4 >\
+            <\cf5 label\cf4  \cf6 for\cf4 =\cf7 "exampleIso"\cf4 >Hora ISO</\cf5 label\cf4 >\
+            <\cf5 input\cf4  \cf6 id\cf4 =\cf7 "exampleIso"\cf4  \cf6 readonly\cf4  />\
+          </\cf5 div\cf4 >\
+        </\cf5 div\cf4 >\
+      </\cf5 div\cf4 >\
+    </\cf5 div\cf4 >\
+  </\cf5 div\cf4 >\
+\
+<\cf5 script\cf4 >\
+\cf8 /*\
+  - Lista de pa\'edses con la zona horaria principal (capital / m\'e1s com\'fan).\
+  - Si un pa\'eds tiene varias zonas, el usuario puede elegir una zona horaria alternativa\
+    en el campo "Zona horaria".\
+  - El reloj usa Intl.DateTimeFormat con timeZone para mostrar hora precisa.\
+*/\cf4 \
+\
+\cf3 const\cf4  countries = [\
+  [\cf7 "Argentina"\cf4 ,\cf7 "America/Argentina/Cordoba"\cf4 ],\
+  [\cf7 "Estados Unidos"\cf4 ,\cf7 "America/New_York"\cf4 ],\
+  [\cf7 "M\'e9xico"\cf4 ,\cf7 "America/Mexico_City"\cf4 ],\
+  [\cf7 "Espa\'f1a"\cf4 ,\cf7 "Europe/Madrid"\cf4 ],\
+  [\cf7 "Reino Unido"\cf4 ,\cf7 "Europe/London"\cf4 ],\
+  [\cf7 "Francia"\cf4 ,\cf7 "Europe/Paris"\cf4 ],\
+  [\cf7 "Alemania"\cf4 ,\cf7 "Europe/Berlin"\cf4 ],\
+  [\cf7 "Italia"\cf4 ,\cf7 "Europe/Rome"\cf4 ],\
+  [\cf7 "Brasil"\cf4 ,\cf7 "America/Sao_Paulo"\cf4 ],\
+  [\cf7 "Chile"\cf4 ,\cf7 "America/Santiago"\cf4 ],\
+  [\cf7 "Colombia"\cf4 ,\cf7 "America/Bogota"\cf4 ],\
+  [\cf7 "Per\'fa"\cf4 ,\cf7 "America/Lima"\cf4 ],\
+  [\cf7 "Uruguay"\cf4 ,\cf7 "America/Montevideo"\cf4 ],\
+  [\cf7 "Paraguay"\cf4 ,\cf7 "America/Asuncion"\cf4 ],\
+  [\cf7 "Venezuela"\cf4 ,\cf7 "America/Caracas"\cf4 ],\
+  [\cf7 "Canad\'e1"\cf4 ,\cf7 "America/Toronto"\cf4 ],\
+  [\cf7 "Australia"\cf4 ,\cf7 "Australia/Sydney"\cf4 ],\
+  [\cf7 "Nueva Zelanda"\cf4 ,\cf7 "Pacific/Auckland"\cf4 ],\
+  [\cf7 "Jap\'f3n"\cf4 ,\cf7 "Asia/Tokyo"\cf4 ],\
+  [\cf7 "China"\cf4 ,\cf7 "Asia/Shanghai"\cf4 ],\
+  [\cf7 "India"\cf4 ,\cf7 "Asia/Kolkata"\cf4 ],\
+  [\cf7 "Sud\'e1frica"\cf4 ,\cf7 "Africa/Johannesburg"\cf4 ],\
+  [\cf7 "Egipto"\cf4 ,\cf7 "Africa/Cairo"\cf4 ],\
+  [\cf7 "Rusia (Mosc\'fa)"\cf4 ,\cf7 "Europe/Moscow"\cf4 ],\
+  [\cf7 "Turqu\'eda"\cf4 ,\cf7 "Europe/Istanbul"\cf4 ],\
+  [\cf7 "Corea del Sur"\cf4 ,\cf7 "Asia/Seoul"\cf4 ],\
+  [\cf7 "Indonesia"\cf4 ,\cf7 "Asia/Jakarta"\cf4 ],\
+  [\cf7 "Filipinas"\cf4 ,\cf7 "Asia/Manila"\cf4 ],\
+  [\cf7 "Singapur"\cf4 ,\cf7 "Asia/Singapore"\cf4 ],\
+  [\cf7 "Noruega"\cf4 ,\cf7 "Europe/Oslo"\cf4 ],\
+  [\cf7 "Suecia"\cf4 ,\cf7 "Europe/Stockholm"\cf4 ],\
+  [\cf7 "Suiza"\cf4 ,\cf7 "Europe/Zurich"\cf4 ]\
+];\
+\
+\cf8 // Intentamos obtener la lista completa de timeZones soportadas por el navegador.\cf4 \
+\cf8 // Si no existe Intl.supportedValuesOf, usaremos una lista reducida de fallback.\cf4 \
+\cf3 let\cf4  allTimeZones = [];\
+\cf3 if\cf4  (\cf3 typeof\cf4  Intl.supportedValuesOf === \cf7 'function'\cf4 ) \{\
+  \cf3 try\cf4  \{\
+    allTimeZones = Intl.supportedValuesOf(\cf7 'timeZone'\cf4 );\
+  \} \cf3 catch\cf4 (e)\{\
+    allTimeZones = [];\
+  \}\
+\}\
+\
+\cf8 // fallback adicional (si no hay supportedValuesOf)\cf4 \
+\cf3 if\cf4 (!allTimeZones.length)\{\
+  allTimeZones = [\
+    \cf7 "UTC"\cf4 ,\cf7 "GMT"\cf4 ,\cf7 "Europe/Madrid"\cf4 ,\cf7 "Europe/London"\cf4 ,\cf7 "Europe/Paris"\cf4 ,\cf7 "Europe/Berlin"\cf4 ,\cf7 "Europe/Moscow"\cf4 ,\
+    \cf7 "America/New_York"\cf4 ,\cf7 "America/Chicago"\cf4 ,\cf7 "America/Denver"\cf4 ,\cf7 "America/Los_Angeles"\cf4 ,\cf7 "America/Sao_Paulo"\cf4 ,\
+    \cf7 "America/Argentina/Cordoba"\cf4 ,\cf7 "America/Mexico_City"\cf4 ,\cf7 "America/Santiago"\cf4 ,\cf7 "America/Bogota"\cf4 ,\cf7 "Asia/Tokyo"\cf4 ,\
+    \cf7 "Asia/Shanghai"\cf4 ,\cf7 "Asia/Kolkata"\cf4 ,\cf7 "Asia/Kuala_Lumpur"\cf4 ,\cf7 "Asia/Seoul"\cf4 ,\cf7 "Asia/Singapore"\cf4 ,\cf7 "Australia/Sydney"\cf4 ,\
+    \cf7 "Pacific/Auckland"\cf4 ,\cf7 "Africa/Johannesburg"\cf4 \
+  ];\
+\}\
+\
+\cf3 const\cf4  countrySelect = document.getElementById(\cf7 'countrySelect'\cf4 );\
+\cf3 const\cf4  countrySearch = document.getElementById(\cf7 'countrySearch'\cf4 );\
+\cf3 const\cf4  tzSelect = document.getElementById(\cf7 'tzSelect'\cf4 );\
+\cf3 const\cf4  timeDisplay = document.getElementById(\cf7 'timeDisplay'\cf4 );\
+\cf3 const\cf4  dateDisplay = document.getElementById(\cf7 'dateDisplay'\cf4 );\
+\cf3 const\cf4  tzName = document.getElementById(\cf7 'tzName'\cf4 );\
+\cf3 const\cf4  utcOffsetEl = document.getElementById(\cf7 'utcOffset'\cf4 );\
+\cf3 const\cf4  weekdayEl = document.getElementById(\cf7 'weekday'\cf4 );\
+\cf3 const\cf4  dstInfo = document.getElementById(\cf7 'dstInfo'\cf4 );\
+\cf3 const\cf4  exampleIso = document.getElementById(\cf7 'exampleIso'\cf4 );\
+\cf3 const\cf4  detectedTzEl = document.getElementById(\cf7 'detectedTz'\cf4 );\
+\cf3 const\cf4  useDetectedBtn = document.getElementById(\cf7 'useDetected'\cf4 );\
+\cf3 const\cf4  copyBtn = document.getElementById(\cf7 'copyBtn'\cf4 );\
+\
+\cf3 let\cf4  selectedTimeZone = \cf9 null\cf4 ;\
+\
+\cf8 // Rellenar lista de pa\'edses\cf4 \
+\cf3 function\cf4  populateCountries(filter=\cf7 ''\cf4 )\{\
+  countrySelect.innerHTML=\cf7 ''\cf4 ;\
+  \cf3 const\cf4  q = filter.trim().toLowerCase();\
+  countries.forEach(([name, tz])=>\{\
+    \cf3 if\cf4 (!q || name.toLowerCase().includes(q))\{\
+      \cf3 const\cf4  opt = document.createElement(\cf7 'option'\cf4 );\
+      opt.value = tz;\
+      opt.textContent = name + \cf7 " \'97 "\cf4  + tz;\
+      countrySelect.appendChild(opt);\
+    \}\
+  \});\
+\}\
+populateCountries();\
+\
+\cf8 // Rellenar lista de timezones (zona horaria manual)\cf4 \
+\cf3 function\cf4  populateTimeZones()\{\
+  tzSelect.innerHTML = \cf7 '<option value="">Seguir zona del pa\'eds (predeterminada)</option>'\cf4 ;\
+  allTimeZones.forEach(tz=>\{\
+    \cf3 const\cf4  o = document.createElement(\cf7 'option'\cf4 );\
+    o.value = tz; o.textContent = tz;\
+    tzSelect.appendChild(o);\
+  \});\
+\}\
+populateTimeZones();\
+\
+\cf8 // b\'fasqueda en lista de pa\'edses\cf4 \
+countrySearch.addEventListener(\cf7 'input'\cf4 , e=>\{\
+  populateCountries(e.target.value);\
+\});\
+\
+\cf8 // cuando seleccionan un pa\'eds\cf4 \
+countrySelect.addEventListener(\cf7 'change'\cf4 , e=>\{\
+  \cf3 const\cf4  tz = e.target.value;\
+  selectedTimeZone = tz;\
+  \cf8 // reset tzSelect a vac\'edo\cf4 \
+  tzSelect.value = \cf7 ""\cf4 ;\
+  updateOnce();\
+\});\
+\
+\cf8 // si el usuario elige manualmente una zona horaria\cf4 \
+tzSelect.addEventListener(\cf7 'change'\cf4 , ()=>\{\
+  \cf3 const\cf4  tz = tzSelect.value;\
+  \cf3 if\cf4 (tz) selectedTimeZone = tz;\
+  \cf3 else\cf4  selectedTimeZone = countrySelect.value || \cf9 null\cf4 ;\
+  updateOnce();\
+\});\
+\
+\cf8 // copiar hora actual\cf4 \
+copyBtn.addEventListener(\cf7 'click'\cf4 , async ()=>\{\
+  \cf3 try\cf4 \{\
+    \cf3 const\cf4  text = timeDisplay.textContent + \cf7 " \'b7 "\cf4  + dateDisplay.textContent + \cf7 " \'b7 "\cf4  + tzName.textContent;\
+    \cf3 await\cf4  navigator.clipboard.writeText(text);\
+    copyBtn.textContent = \cf7 "Copiado \uc0\u10003 "\cf4 ;\
+    setTimeout(()=> copyBtn.textContent = \cf7 "Copiar hora actual"\cf4 ,\cf6 1200\cf4 );\
+  \}\cf3 catch\cf4 (err)\{\
+    copyBtn.textContent = \cf7 "Error"\cf4 ;\
+    setTimeout(()=> copyBtn.textContent = \cf7 "Copiar hora actual"\cf4 ,\cf6 1200\cf4 );\
+  \}\
+\});\
+\
+\cf8 // detectar zona horaria del navegador (recomendado)\cf4 \
+\cf3 const\cf4  detectedZone = (Intl && Intl.DateTimeFormat) ? Intl.DateTimeFormat().resolvedOptions().timeZone : \cf9 null\cf4 ;\
+detectedTzEl.textContent = detectedZone || \cf7 "No disponible"\cf4 ;\
+\
+\cf8 // bot\'f3n para usar la zona detectada\cf4 \
+useDetectedBtn.addEventListener(\cf7 'click'\cf4 , ()=>\{\
+  \cf3 if\cf4 (detectedZone)\{\
+    selectedTimeZone = detectedZone;\
+    tzSelect.value = detectedZone;\
+    \cf8 // si la zona detectada no aparece en la lista de pa\'edses, dejamos el select de pa\'eds sin selecci\'f3n\cf4 \
+    \cf3 for\cf4 (\cf3 let\cf4  i=\cf6 0\cf4 ;i<countrySelect.options.length;i++)\{\
+      \cf3 if\cf4 (countrySelect.options[i].value === detectedZone)\{\
+        countrySelect.selectedIndex = i;\
+        \cf3 break\cf4 ;\
+      \}\
+    \}\
+    updateOnce();\
+  \}\cf3 else\cf4 \{\
+    alert(\cf7 "No se pudo detectar tu zona horaria en este navegador."\cf4 );\
+  \}\
+\});\
+\
+\cf8 // funci\'f3n que extrae la "parte" timeZoneName y el formato con Intl\cf4 \
+\cf3 function\cf4  fmtPartsForTimeZone(tz)\{\
+  \cf8 // Formato con nombre de zona corto (suele incluir GMT\'b1)\cf4 \
+  \cf3 const\cf4  opts = \{\
+    \cf6 timeZone\cf4 : tz,\
+    \cf6 hour\cf4 : \cf7 '2-digit'\cf4 , \cf6 minute\cf4 : \cf7 '2-digit'\cf4 , \cf6 second\cf4 : \cf7 '2-digit'\cf4 ,\
+    \cf6 weekday\cf4 : \cf7 'long'\cf4 , \cf6 year\cf4 : \cf7 'numeric'\cf4 , \cf6 month\cf4 : \cf7 'long'\cf4 , \cf6 day\cf4 : \cf7 '2-digit'\cf4 ,\
+    \cf6 hour12\cf4 : \cf9 false\cf4 ,\
+    \cf6 timeZoneName\cf4 : \cf7 'short'\cf4 \
+  \};\
+  \cf3 const\cf4  f = \cf3 new\cf4  Intl.DateTimeFormat(\cf7 'es-ES'\cf4 , opts);\
+  \cf3 const\cf4  parts = f.formatToParts(\cf3 new\cf4  Date());\
+  \cf8 // obtener timezone short name (\'faltima parte tipo 'GMT-3' o 'GMT+2' o 'ART')\cf4 \
+  \cf3 const\cf4  tzPart = parts.find(p=>p.type===\cf7 'timeZoneName'\cf4 )?.value || \cf7 ''\cf4 ;\
+  \cf8 // construir human readable\cf4 \
+  \cf3 const\cf4  timePart = parts.filter(p=>[\cf7 'hour'\cf4 ,\cf7 'minute'\cf4 ,\cf7 'second'\cf4 ].includes(p.type)).map(p=>p.value).join(\cf7 ':'\cf4 );\
+  \cf3 const\cf4  datePart = parts.filter(p=>[\cf7 'day'\cf4 ,\cf7 'month'\cf4 ,\cf7 'year'\cf4 ].includes(p.type)).map(p=>p.value).join(\cf7 ' '\cf4 );\
+  \cf3 const\cf4  weekday = parts.find(p=>p.type===\cf7 'weekday'\cf4 )?.value || \cf7 ''\cf4 ;\
+  \cf3 return\cf4  \{tzPart, timePart, datePart, weekday\};\
+\}\
+\
+\cf8 // funci\'f3n para calcular si hay DST comparando offset ahora y en enero (heur\'edstica)\cf4 \
+\cf3 function\cf4  getDstInfo(tz)\{\
+  \cf3 try\cf4 \{\
+    \cf3 const\cf4  now = \cf3 new\cf4  Date();\
+    \cf3 const\cf4  jan = \cf3 new\cf4  Date(now.getFullYear(),\cf6 0\cf4 ,\cf6 1\cf4 );\
+    \cf3 const\cf4  fmt = (d, zone) => \{\
+      \cf8 // Formatear y extraer timezone name con offset\cf4 \
+      \cf3 const\cf4  parts = \cf3 new\cf4  Intl.DateTimeFormat(\cf7 'en-US'\cf4 , \{\cf6 timeZone\cf4 : zone, \cf6 timeZoneName\cf4 :\cf7 'short'\cf4 \}).formatToParts(d);\
+      \cf3 return\cf4  parts.find(p=>p.type===\cf7 'timeZoneName'\cf4 )?.value || \cf7 ''\cf4 ;\
+    \};\
+    \cf3 const\cf4  nowName = fmt(now,tz);\
+    \cf3 const\cf4  janName = fmt(jan,tz);\
+    \cf3 if\cf4 (nowName !== janName) \cf3 return\cf4  \cf7 `Probablemente DST (comparado con enero): \cf5 $\{nowName\}\cf7 `\cf4 ;\
+    \cf3 else\cf4  \cf3 return\cf4  \cf7 `Sin cambio DST aparente`\cf4 ;\
+  \}\cf3 catch\cf4 (e)\{\
+    \cf3 return\cf4  \cf7 'No disponible'\cf4 ;\
+  \}\
+\}\
+\
+\cf8 // actualizar reloj una vez (y tambi\'e9n peri\'f3dicamente)\cf4 \
+\cf3 function\cf4  updateOnce()\{\
+  \cf3 const\cf4  tz = selectedTimeZone || countrySelect.value || detectedZone || \cf7 'UTC'\cf4 ;\
+  \cf3 try\cf4 \{\
+    \cf3 const\cf4  parts = fmtPartsForTimeZone(tz);\
+    timeDisplay.textContent = parts.timePart;\
+    dateDisplay.textContent = parts.datePart;\
+    tzName.textContent = tz + (parts.tzPart ? \cf7 " \'b7 "\cf4  + parts.tzPart : \cf7 ""\cf4 );\
+    weekdayEl.textContent = parts.weekday;\
+    utcOffsetEl.textContent = parts.tzPart || \cf7 'UTC'\cf4 ;\
+    exampleIso.value = \cf3 new\cf4  Date().toLocaleString(\cf7 'sv-SE'\cf4 , \{\cf6 timeZone\cf4 : tz\})?.replace(\cf7 ' '\cf4 , \cf7 'T'\cf4 ) || \cf7 ''\cf4 ;\
+    dstInfo.textContent = getDstInfo(tz);\
+  \}\cf3 catch\cf4 (err)\{\
+    timeDisplay.textContent = \cf7 "Error al mostrar la hora"\cf4 ;\
+    dateDisplay.textContent = err.message || err;\
+  \}\
+\}\
+\
+\cf8 // actualizar constantemente (segundos)\cf4 \
+\cf3 let\cf4  timer = \cf9 null\cf4 ;\
+\cf3 function\cf4  startTick()\{\
+  \cf3 if\cf4 (timer) clearInterval(timer);\
+  timer = setInterval(updateOnce, \cf6 500\cf4 ); \cf8 // actualiza cada 0.5s para segundos suaves\cf4 \
+\}\
+\
+\cf8 // inicializamos: seleccionamos Argentina si existe, sino el primer pa\'eds\cf4 \
+(\cf3 function\cf4  init()\{\
+  \cf8 // preferencia: seleccionar Argentina si est\'e1 en la lista\cf4 \
+  \cf3 const\cf4  indexArg = Array.from(countrySelect.options).findIndex(o=>o.textContent.toLowerCase().includes(\cf7 'argentina'\cf4 ));\
+  \cf3 if\cf4 (indexArg >= \cf6 0\cf4 ) countrySelect.selectedIndex = indexArg;\
+  \cf3 else\cf4  countrySelect.selectedIndex = \cf6 0\cf4 ;\
+\
+  selectedTimeZone = countrySelect.value || detectedZone || \cf7 'UTC'\cf4 ;\
+  \cf8 // set tzSelect if matches\cf4 \
+  \cf3 if\cf4 (allTimeZones.includes(selectedTimeZone)) tzSelect.value = selectedTimeZone;\
+\
+  updateOnce();\
+  startTick();\
+\})();\
+\
+</\cf5 script\cf4 >\
+</\cf5 body\cf4 >\
+</\cf5 html\cf4 >}
